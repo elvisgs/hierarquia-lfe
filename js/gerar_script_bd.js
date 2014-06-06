@@ -10,7 +10,7 @@ Object.keys(regs).forEach(function(reg) {
   sql +=    '  id_pai int,\n';
 
   campos.forEach(function(campo, i) {
-    sql += '  ' + campo.campo.toLowerCase() + ' ' + obterTipoSql(campo);
+    sql += '  "' + campo.campo.toLowerCase() + '" ' + obterTipoSql(campo);
     sql += (campos.length - 1 > i ? ',' : '') + '\n';
   });
 
