@@ -7,7 +7,7 @@ Object.keys(regs).forEach(function(reg) {
 
   var sql = 'create table reg_' + reg.toLowerCase() + ' (\n';
   sql +=    '  id int not null,\n';
-  sql +=    '  id_pai int,\n'; 
+  sql +=    '  id_pai int,\n';
 
   campos.forEach(function(campo, i) {
     sql += '  ' + campo.campo.toLowerCase() + ' ' + obterTipoSql(campo);

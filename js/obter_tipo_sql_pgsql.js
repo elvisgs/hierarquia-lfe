@@ -13,7 +13,7 @@ module.exports = function(metadados_campo) {
     }
   }
   if (metadados_campo.tipo === 'C')
-    tipoSql = 'character varying(' + (metadados_campo.tamanho || 60) + ')';
+    tipoSql = 'character varying(' + (metadados_campo.tamanho || 255) + ')';
 
   return tipoSql;
 }

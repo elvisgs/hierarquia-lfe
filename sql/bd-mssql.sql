@@ -34,14 +34,14 @@ create table reg_0000 (
   dt_fin varchar(8),
   ind_ed varchar(1),
   ind_centr varchar(1),
-  nome varchar(60),
+  nome varchar(255),
   cnpj varchar(14),
   cpf varchar(11),
   nit varchar(11),
   uf varchar(2),
-  ie varchar(60),
+  ie varchar(255),
   cod_mun varchar(7),
-  im varchar(60),
+  im varchar(255),
   suframa varchar(9)
 );
 
@@ -54,17 +54,17 @@ create table reg_0001 (
 create table reg_0005 (
   id int not null,
   id_pai int,
-  fantasia varchar(60),
+  fantasia varchar(255),
   cep varchar(8),
-  endereco varchar(60),
-  num varchar(60),
-  compl varchar(60),
-  bairro varchar(60),
+  endereco varchar(255),
+  num varchar(255),
+  compl varchar(255),
+  bairro varchar(255),
   cep_cp varchar(8),
   cp int,
-  fone varchar(60),
-  fax varchar(60),
-  email varchar(60)
+  fone varchar(255),
+  fax varchar(255),
+  email varchar(255)
 );
 
 create table reg_0010 (
@@ -73,16 +73,16 @@ create table reg_0010 (
   cnpj varchar(14),
   cpf varchar(11),
   uf varchar(2),
-  ie varchar(60),
+  ie varchar(255),
   cod_mun varchar(7),
-  im varchar(60)
+  im varchar(255)
 );
 
 create table reg_0015 (
   id int not null,
   id_pai int,
   uf_st varchar(2),
-  ie_st varchar(60)
+  ie_st varchar(255)
 );
 
 create table reg_0020 (
@@ -95,49 +95,49 @@ create table reg_0020 (
 create table reg_0100 (
   id int not null,
   id_pai int,
-  nome varchar(60),
+  nome varchar(255),
   cnpj varchar(14),
   cpf varchar(11),
   crc varchar(11),
   uf varchar(2),
   cep varchar(8),
-  endereco varchar(60),
-  num varchar(60),
-  compl varchar(60),
-  bairro varchar(60),
+  endereco varchar(255),
+  num varchar(255),
+  compl varchar(255),
+  bairro varchar(255),
   cep_cp varchar(8),
   cp int,
-  fone varchar(60),
-  fax varchar(60),
-  email varchar(60)
+  fone varchar(255),
+  fax varchar(255),
+  email varchar(255)
 );
 
 create table reg_0125 (
   id int not null,
   id_pai int,
-  emp_tec varchar(60),
+  emp_tec varchar(255),
   cnpj varchar(14),
   cpf varchar(11),
-  fone varchar(60),
-  fax varchar(60),
-  email varchar(60)
+  fone varchar(255),
+  fax varchar(255),
+  email varchar(255)
 );
 
 create table reg_0150 (
   id int not null,
   id_pai int,
-  cod_part varchar(60),
-  nome varchar(60),
+  cod_part varchar(255),
+  nome varchar(255),
   cod_pais varchar(5),
   cnpj varchar(14),
   cpf varchar(11),
   cei varchar(12),
   nit varchar(11),
   uf varchar(2),
-  ie varchar(60),
-  ie_st varchar(60),
+  ie varchar(255),
+  ie_st varchar(255),
   cod_mun varchar(7),
-  im varchar(60),
+  im varchar(255),
   suframa varchar(9)
 );
 
@@ -145,14 +145,14 @@ create table reg_0175 (
   id int not null,
   id_pai int,
   cep varchar(8),
-  endereco varchar(60),
-  num varchar(60),
-  compl varchar(60),
-  bairro varchar(60),
+  endereco varchar(255),
+  num varchar(255),
+  compl varchar(255),
+  bairro varchar(255),
   cep_cp varchar(8),
   cp int,
-  fone varchar(60),
-  fax varchar(60)
+  fone varchar(255),
+  fax varchar(255)
 );
 
 create table reg_0180 (
@@ -166,8 +166,8 @@ create table reg_0180 (
 create table reg_0200 (
   id int not null,
   id_pai int,
-  cod_item varchar(60),
-  descr_item varchar(60),
+  cod_item varchar(255),
+  descr_item varchar(255),
   cod_gen varchar(2),
   cod_lst varchar(4)
 );
@@ -175,8 +175,8 @@ create table reg_0200 (
 create table reg_0205 (
   id int not null,
   id_pai int,
-  cod_ant_item varchar(60),
-  descr_ant_item varchar(60),
+  cod_ant_item varchar(255),
+  descr_ant_item varchar(255),
   dt_ini_ant varchar(8),
   dt_fin_ant varchar(8)
 );
@@ -184,10 +184,10 @@ create table reg_0205 (
 create table reg_0210 (
   id int not null,
   id_pai int,
-  unid_item varchar(60),
-  cod_item_comp varchar(60),
+  unid_item varchar(255),
+  cod_item_comp varchar(255),
   qtd_comp decimal(18, 3),
-  unid_comp varchar(60),
+  unid_comp varchar(255),
   perda_comp decimal(18, 2),
   dt_ini_comp varchar(8),
   dt_fin_comp varchar(8)
@@ -196,36 +196,36 @@ create table reg_0210 (
 create table reg_0220 (
   id int not null,
   id_pai int,
-  unid_inv varchar(60),
-  unid_conv varchar(60),
+  unid_inv varchar(255),
+  unid_conv varchar(255),
   fat_conv int
 );
 
 create table reg_0400 (
   id int not null,
   id_pai int,
-  cod_nat varchar(60),
-  descr_nat varchar(60)
+  cod_nat varchar(255),
+  descr_nat varchar(255)
 );
 
 create table reg_0450 (
   id int not null,
   id_pai int,
-  cod_inf_obs varchar(60),
+  cod_inf_obs varchar(255),
   txt varchar(255)
 );
 
 create table reg_0455 (
   id int not null,
   id_pai int,
-  norma varchar(60)
+  norma varchar(255)
 );
 
 create table reg_0460 (
   id int not null,
   id_pai int,
-  cod_da varchar(60),
-  num_da varchar(60),
+  cod_da varchar(255),
+  num_da varchar(255),
   vl_da decimal(18, 2),
   dt_ini varchar(8),
   dt_fin varchar(8),
@@ -241,12 +241,12 @@ create table reg_0465 (
   cnpj varchar(14),
   cpf varchar(11),
   uf varchar(2),
-  ie varchar(60),
+  ie varchar(255),
   cod_mun varchar(7),
-  im varchar(60),
+  im varchar(255),
   cod_mod varchar(2),
   cod_sit varchar(1),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   num_doc int,
   dt_doc varchar(8),
@@ -262,7 +262,7 @@ create table reg_0470 (
   id int not null,
   id_pai int,
   cod_mod varchar(2),
-  ecf_fab varchar(60),
+  ecf_fab varchar(255),
   ecf_cx int,
   cro int,
   crz int,
@@ -483,9 +483,9 @@ create table reg_pe8320 (
   id_pai int,
   ind_ca varchar(1),
   vl_ca decimal(18, 2),
-  num_proc varchar(60),
+  num_proc varchar(255),
   ind_proc varchar(1),
-  [proc] varchar(60)
+  proc varchar(255)
 );
 
 create table reg_pe8330 (
@@ -493,8 +493,8 @@ create table reg_pe8330 (
   id_pai int,
   ind_ut varchar(1),
   vl_ut decimal(18, 2),
-  ie varchar(60),
-  coment varchar(60)
+  ie varchar(255),
+  coment varchar(255)
 );
 
 create table reg_pe8340 (
@@ -502,9 +502,9 @@ create table reg_pe8340 (
   id_pai int,
   ind_cd varchar(1),
   vl_deb decimal(18, 2),
-  cod_rec varchar(60),
-  ie varchar(60),
-  coment varchar(60)
+  cod_rec varchar(255),
+  ie varchar(255),
+  coment varchar(255)
 );
 
 create table reg_pe8800 (
@@ -512,7 +512,7 @@ create table reg_pe8800 (
   id_pai int,
   dt_blnco varchar(8),
   num_func int,
-  cod_unc varchar(60),
+  cod_unc varchar(255),
   kwh  int
 );
 
@@ -534,16 +534,16 @@ create table reg_a020 (
   id_pai int,
   ind_oper varchar(1),
   ind_emit varchar(1),
-  cod_part varchar(60),
+  cod_part varchar(255),
   cod_mod varchar(2),
   cod_sit varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   num_doc int,
   dt_doc varchar(8),
   cfps varchar(4),
   cod_mun_serv varchar(7),
-  cod_nat varchar(60),
+  cod_nat varchar(255),
   vl_doc decimal(18, 2),
   ind_pgto varchar(1),
   vl_sub_tot decimal(18, 2),
@@ -556,7 +556,7 @@ create table reg_a020 (
   vl_issqn decimal(18, 2),
   vl_bc_issqn_rt decimal(18, 2),
   vl_issqn_rt decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_a025 (
@@ -579,7 +579,7 @@ create table reg_a030 (
   cnpj varchar(14),
   cpf varchar(11),
   cod_mun varchar(7),
-  im varchar(60),
+  im varchar(255),
   vl_sub decimal(18, 2),
   vl_bc_issqn_sub decimal(18, 2),
   vl_issqn_sub decimal(18, 2)
@@ -602,12 +602,12 @@ create table reg_a035 (
 create table reg_a040 (
   id int not null,
   id_pai int,
-  cod_part varchar(60),
-  veic_id varchar(60),
+  cod_part varchar(255),
+  veic_id varchar(255),
   uf_veic varchar(2),
   qtd_vol int,
-  espécie varchar(60),
-  marca varchar(60),
+  espécie varchar(255),
+  marca varchar(255),
   num int,
   peso_brt int,
   peso_liq int
@@ -619,14 +619,14 @@ create table reg_a045 (
   ind_carg varchar(1),
   cnpj_col varchar(14),
   uf_col varchar(2),
-  ie_col varchar(60),
+  ie_col varchar(255),
   cod_mun_col varchar(7),
-  im_col varchar(60),
+  im_col varchar(255),
   cnpj_entg varchar(14),
   uf_entg varchar(2),
-  ie_entg varchar(60),
+  ie_entg varchar(255),
   cod_mun_entg varchar(7),
-  im_entg varchar(60)
+  im_entg varchar(255)
 );
 
 create table reg_a050 (
@@ -634,8 +634,8 @@ create table reg_a050 (
   id_pai int,
   ind_emit varchar(1),
   ind_tit varchar(2),
-  tit varchar(60),
-  num_tit varchar(60),
+  tit varchar(255),
+  num_tit varchar(255),
   qtd_parc int,
   vl_tit decimal(18, 2)
 );
@@ -652,10 +652,10 @@ create table reg_a200 (
   id int not null,
   id_pai int,
   num_item int,
-  cod_item varchar(60),
+  cod_item varchar(255),
   vl_unit decimal(18, 3),
   qtd decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item decimal(18, 2),
   vl_desc_i decimal(18, 2),
   ctiss varchar(2),
@@ -670,7 +670,7 @@ create table reg_a300 (
   cpf varchar(11),
   cod_mod varchar(2),
   cod_sit varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   num_doc int,
   dt_doc varchar(8),
@@ -682,17 +682,17 @@ create table reg_a300 (
   vl_da decimal(18, 2),
   vl_bc_issqn decimal(18, 2),
   vl_issqn decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_a310 (
   id int not null,
   id_pai int,
   num_item int,
-  cod_item varchar(60),
+  cod_item varchar(255),
   vl_unit decimal(18, 3),
   qtd decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item decimal(18, 2),
   vl_desc_i decimal(18, 2),
   ctiss varchar(2),
@@ -705,7 +705,7 @@ create table reg_a320 (
   id int not null,
   id_pai int,
   cod_mod varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   num_doc_ini int,
   num_doc_fin int,
@@ -724,9 +724,9 @@ create table reg_a320 (
 create table reg_a330 (
   id int not null,
   id_pai int,
-  cod_item varchar(60),
+  cod_item varchar(255),
   qtd decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item decimal(18, 2),
   vl_bc_issqn_i decimal(18, 2),
   aliq_issqn decimal(18, 2),
@@ -739,7 +739,7 @@ create table reg_a350 (
   cod_mod varchar(2),
   cod_sit varchar(2),
   ecf_cx int,
-  ecf_fab varchar(60),
+  ecf_fab varchar(255),
   cro int,
   crz int,
   num_doc int,
@@ -766,11 +766,11 @@ create table reg_a360 (
   id int not null,
   id_pai int,
   num_item int,
-  cod_item varchar(60),
+  cod_item varchar(255),
   vl_unit decimal(18, 3),
   qtd decimal(18, 3),
   qtd_canc decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item decimal(18, 2),
   vl_desc_i decimal(18, 2),
   vl_canc_i decimal(18, 2),
@@ -789,7 +789,7 @@ create table reg_a370 (
   id_pai int,
   cod_mod varchar(2),
   ecf_cx int,
-  ecf_fab varchar(60),
+  ecf_fab varchar(255),
   cro int,
   crz int,
   num_doc_ini int,
@@ -813,10 +813,10 @@ create table reg_a370 (
 create table reg_a380 (
   id int not null,
   id_pai int,
-  cod_item varchar(60),
+  cod_item varchar(255),
   qtd decimal(18, 3),
   qtd_canc_it decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item decimal(18, 2),
   vl_desc_i decimal(18, 2),
   vl_canc_i decimal(18, 2),
@@ -847,15 +847,15 @@ create table reg_b020 (
   id_pai int,
   ind_oper varchar(1),
   ind_emit varchar(1),
-  cod_part varchar(60),
+  cod_part varchar(255),
   cod_mod varchar(2),
   cod_sit varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   num_doc int,
   dt_doc varchar(8),
   cfps varchar(4),
-  num_lcto varchar(60),
+  num_lcto varchar(255),
   cod_mun_serv varchar(7),
   vl_cont decimal(18, 2),
   vl_mat_terc decimal(18, 3),
@@ -866,7 +866,7 @@ create table reg_b020 (
   vl_bc_issqn_rt decimal(18, 2),
   vl_issqn_rt decimal(18, 2),
   vl_issqn decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_b025 (
@@ -883,19 +883,19 @@ create table reg_b030 (
   id int not null,
   id_pai int,
   cod_mod varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   num_doc_ini int,
   num_doc_fin int,
   dt_doc varchar(8),
   cfps varchar(4),
-  num_lcto varchar(60),
+  num_lcto varchar(255),
   qtd_canc int,
   vl_cont decimal(18, 2),
   vl_isnt_issqn decimal(18, 5),
   vl_bc_issqn decimal(18, 2),
   vl_issqn decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_b035 (
@@ -913,7 +913,7 @@ create table reg_b040 (
   id_pai int,
   cod_mod varchar(2),
   ecf_cx int,
-  ecf_fab varchar(60),
+  ecf_fab varchar(255),
   cro int,
   crz int,
   num_doc_ini int,
@@ -937,7 +937,7 @@ create table reg_b040 (
   vl_nt_issqn decimal(18, 2),
   vl_rt_issqn decimal(18, 2),
   vl_liq decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_b045 (
@@ -964,7 +964,7 @@ create table reg_b050 (
   num_mr_ecf int,
   dt_mr_ecf varchar(8),
   cfps varchar(4),
-  num_lcto varchar(60),
+  num_lcto varchar(255),
   vl_brt decimal(18, 2),
   vl_canc_issqn decimal(18, 2),
   vl_canc_icms decimal(18, 2),
@@ -1053,7 +1053,7 @@ create table reg_b440 (
   id int not null,
   id_pai int,
   ind_oper varchar(1),
-  cod_part varchar(60),
+  cod_part varchar(255),
   vl_cont_rt decimal(18, 2),
   vl_bc_issqn_rt decimal(18, 2),
   aliq_issqn decimal(18, 2),
@@ -1078,10 +1078,10 @@ create table reg_b460 (
   id_pai int,
   ind_ded varchar(1),
   vl_ded decimal(18, 2),
-  num_proc varchar(60),
+  num_proc varchar(255),
   ind_proc varchar(1),
-  [proc] varchar(60),
-  cod_inf_obs varchar(60)
+  proc varchar(255),
+  cod_inf_obs varchar(255)
 );
 
 create table reg_b465 (
@@ -1092,7 +1092,7 @@ create table reg_b465 (
   vl_comp decimal(18, 2),
   per_fiscal varchar(6),
   vl_res decimal(18, 2),
-  coment varchar(60)
+  coment varchar(255)
 );
 
 create table reg_b470 (
@@ -1118,7 +1118,7 @@ create table reg_b470 (
 create table reg_b475 (
   id int not null,
   id_pai int,
-  cod_part varchar(60),
+  cod_part varchar(255),
   vl_fil decimal(18, 2)
 );
 
@@ -1136,12 +1136,12 @@ create table reg_b490 (
   cod_or varchar(2),
   vl_or decimal(18, 2),
   dt_vcto varchar(8),
-  cod_rec varchar(60),
+  cod_rec varchar(255),
   cod_mun_serv varchar(7),
-  num_proc varchar(60),
+  num_proc varchar(255),
   ind_proc varchar(1),
-  [proc] varchar(60),
-  cod_inf_obs varchar(60)
+  proc varchar(255),
+  cod_inf_obs varchar(255)
 );
 
 create table reg_b600 (
@@ -1158,16 +1158,16 @@ create table reg_b600 (
 create table reg_b700 (
   id int not null,
   id_pai int,
-  nat_obra varchar(60),
-  cod_part varchar(60),
+  nat_obra varchar(255),
+  cod_part varchar(255),
   uf varchar(2),
   cep varchar(8),
-  num varchar(60),
-  compl varchar(60),
-  bairro varchar(60),
+  num varchar(255),
+  compl varchar(255),
+  bairro varchar(255),
   ctrt varchar(8),
   dt_ctrt varchar(8),
-  cart_reg varchar(60),
+  cart_reg varchar(255),
   dt_obr_ini varchar(8),
   dt_enc_ob varchar(8),
   vl_or_mun decimal(18, 2),
@@ -1200,14 +1200,14 @@ create table reg_c020 (
   id_pai int,
   ind_oper varchar(1),
   ind_emit varchar(1),
-  cod_part varchar(60),
+  cod_part varchar(255),
   cod_mod varchar(2),
   cod_sit varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   num_doc int,
   dt_doc varchar(8),
   dt_e_s varchar(8),
-  cod_nat varchar(60),
+  cod_nat varchar(255),
   vl_doc decimal(18, 2),
   ind_pgto varchar(1),
   vl_desc decimal(18, 2),
@@ -1221,7 +1221,7 @@ create table reg_c020 (
   vl_bc_st decimal(18, 2),
   vl_st decimal(18, 2),
   vl_ipi decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_c030 (
@@ -1229,8 +1229,8 @@ create table reg_c030 (
   id_pai int,
   ind_emit varchar(1),
   ind_tit varchar(2),
-  tit varchar(60),
-  num_tit varchar(60),
+  tit varchar(255),
+  num_tit varchar(255),
   qtd_parc int,
   vl_tit decimal(18, 2)
 );
@@ -1294,13 +1294,13 @@ create table reg_c200 (
 create table reg_c250 (
   id int not null,
   id_pai int,
-  cod_part varchar(60),
-  veic_id varchar(60),
+  cod_part varchar(255),
+  veic_id varchar(255),
   uf_veic varchar(2),
   qtd_vol int,
-  espécie varchar(60),
-  marca varchar(60),
-  num varchar(60),
+  espécie varchar(255),
+  marca varchar(255),
+  num varchar(255),
   peso_brt int,
   peso_liq int
 );
@@ -1311,22 +1311,22 @@ create table reg_c255 (
   ind_carg varchar(1),
   cnpj_col varchar(14),
   uf_col varchar(2),
-  ie_col varchar(60),
+  ie_col varchar(255),
   cod_mun_col varchar(7),
-  im_col varchar(60),
+  im_col varchar(255),
   cnpj_entg varchar(14),
   uf_entg varchar(2),
-  ie_entg varchar(60),
+  ie_entg varchar(255),
   cod_mun_entg varchar(7),
-  im_entg varchar(60)
+  im_entg varchar(255)
 );
 
 create table reg_c260 (
   id int not null,
   id_pai int,
-  veic_id varchar(60),
+  veic_id varchar(255),
   uf_veic varchar(2),
-  num varchar(60),
+  num varchar(255),
   peso_brt int,
   peso_liq int
 );
@@ -1335,10 +1335,10 @@ create table reg_c300 (
   id int not null,
   id_pai int,
   num_item int,
-  cod_item varchar(60),
+  cod_item varchar(255),
   vl_unit decimal(18, 3),
   qtd decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item decimal(18, 2),
   vl_desc_i decimal(18, 2),
   ind_mov varchar(1),
@@ -1376,7 +1376,7 @@ create table reg_c310 (
 create table reg_c315 (
   id int not null,
   id_pai int,
-  lote_med varchar(60),
+  lote_med varchar(255),
   dt_val varchar(8),
   ind_med varchar(1),
   vl_tab_max decimal(18, 2)
@@ -1386,9 +1386,9 @@ create table reg_c320 (
   id int not null,
   id_pai int,
   ind_arm varchar(1),
-  num_arm varchar(60),
-  num_cano varchar(60),
-  descr_compl varchar(60)
+  num_arm varchar(255),
+  num_cano varchar(255),
+  descr_compl varchar(255)
 );
 
 create table reg_c325 (
@@ -1398,8 +1398,8 @@ create table reg_c325 (
   cnpj varchar(14),
   cpf varchar(11),
   uf varchar(2),
-  ie varchar(60),
-  chassi_veic varchar(60)
+  ie varchar(255),
+  chassi_veic varchar(255)
 );
 
 create table reg_c500 (
@@ -1420,7 +1420,7 @@ create table reg_c550 (
   id_pai int,
   cod_mod varchar(2),
   cod_sit varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   num_doc int,
   dt_doc varchar(8),
@@ -1429,17 +1429,17 @@ create table reg_c550 (
   vl_merc decimal(18, 2),
   vl_bc_icms decimal(18, 2),
   vl_icms decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_c555 (
   id int not null,
   id_pai int,
   num_item int,
-  cod_item varchar(60),
+  cod_item varchar(255),
   vl_unit decimal(18, 3),
   qtd decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item decimal(18, 2),
   vl_desc_i decimal(18, 2),
   cst varchar(3),
@@ -1464,7 +1464,7 @@ create table reg_c570 (
   id int not null,
   id_pai int,
   cod_mod varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   num_doc_ini int,
   num_doc_fin int,
@@ -1478,9 +1478,9 @@ create table reg_c570 (
 create table reg_c575 (
   id int not null,
   id_pai int,
-  cod_item varchar(60),
+  cod_item varchar(255),
   qtd decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item decimal(18, 2),
   cst varchar(3),
   cfop varchar(4),
@@ -1492,10 +1492,10 @@ create table reg_c575 (
 create table reg_c580 (
   id int not null,
   id_pai int,
-  cod_item varchar(60),
+  cod_item varchar(255),
   qtd decimal(18, 3),
   qtd_canc decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item decimal(18, 2),
   vl_desc_i decimal(18, 2),
   vl_bc_icms_i decimal(18, 2),
@@ -1509,7 +1509,7 @@ create table reg_c600 (
   cod_mod varchar(2),
   cod_sit varchar(2),
   ecf_cx int,
-  ecf_fab varchar(60),
+  ecf_fab varchar(255),
   cro int,
   crz int,
   num_doc int,
@@ -1536,11 +1536,11 @@ create table reg_c605 (
   id int not null,
   id_pai int,
   num_item int,
-  cod_item varchar(60),
+  cod_item varchar(255),
   vl_unit decimal(18, 3),
   qtd decimal(18, 3),
   qtd_canc_i decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item decimal(18, 2),
   vl_desc_i decimal(18, 2),
   vl_canc_i decimal(18, 2),
@@ -1561,7 +1561,7 @@ create table reg_c620 (
   id_pai int,
   cod_mod varchar(2),
   ecf_cx int,
-  ecf_fab varchar(60),
+  ecf_fab varchar(255),
   cro int,
   crz int,
   num_doc_ini int,
@@ -1585,10 +1585,10 @@ create table reg_c620 (
 create table reg_c625 (
   id int not null,
   id_pai int,
-  cod_item varchar(60),
+  cod_item varchar(255),
   qtd decimal(18, 3),
   qtd_canc_i decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item decimal(18, 2),
   vl_desc_i decimal(18, 2),
   vl_canc_i decimal(18, 2),
@@ -1604,10 +1604,10 @@ create table reg_c625 (
 create table reg_c640 (
   id int not null,
   id_pai int,
-  cod_item varchar(60),
+  cod_item varchar(255),
   qtd decimal(18, 3),
   qtd_canc_i decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item decimal(18, 2),
   vl_desc_i decimal(18, 2),
   vl_canc_i decimal(18, 2),
@@ -1625,16 +1625,16 @@ create table reg_c700 (
   id_pai int,
   ind_oper varchar(1),
   ind_emit varchar(1),
-  cod_part varchar(60),
+  cod_part varchar(255),
   cod_mod varchar(2),
   cod_sit varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   cod_cons varchar(2),
   num_doc int,
   dt_doc varchar(8),
   dt_e_s varchar(8),
-  cod_nat varchar(60),
+  cod_nat varchar(255),
   vl_doc decimal(18, 2),
   vl_desc decimal(18, 2),
   vl_forn decimal(18, 2),
@@ -1643,13 +1643,13 @@ create table reg_c700 (
   vl_da decimal(18, 2),
   vl_bc_icms decimal(18, 2),
   vl_icms decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_c705 (
   id int not null,
   id_pai int,
-  cod_unc varchar(60),
+  cod_unc varchar(255),
   ind_lig varchar(1),
   ind_kv varchar(2),
   per_fiscal varchar(6),
@@ -1665,11 +1665,11 @@ create table reg_c750 (
   id int not null,
   id_pai int,
   num_item int,
-  cod_item varchar(60),
+  cod_item varchar(255),
   cod_class varchar(2),
   vl_unit decimal(18, 3),
   qtd decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item int,
   vl_desc_i decimal(18, 2),
   cst varchar(3),
@@ -1681,7 +1681,7 @@ create table reg_c750 (
   cnpj varchar(14),
   cpf varchar(11),
   uf varchar(2),
-  ie varchar(60)
+  ie varchar(255)
 );
 
 create table reg_c760 (
@@ -1700,7 +1700,7 @@ create table reg_c770 (
   id_pai int,
   cod_mod varchar(2),
   cod_mun varchar(7),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   cod_cons varchar(2),
   qtd_cons int,
@@ -1721,10 +1721,10 @@ create table reg_c775 (
   id int not null,
   id_pai int,
   num_item int,
-  cod_item varchar(60),
+  cod_item varchar(255),
   cod_class varchar(2),
   qtd decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item decimal(18, 2),
   vl_desc_i decimal(18, 2),
   cst varchar(3),
@@ -1762,15 +1762,15 @@ create table reg_d020 (
   id_pai int,
   ind_oper varchar(1),
   ind_emit varchar(1),
-  cod_part varchar(60),
+  cod_part varchar(255),
   cod_mod varchar(2),
   cod_sit varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   num_doc int,
   dt_doc varchar(8),
   dt_a_p varchar(8),
-  cod_nat varchar(60),
+  cod_nat varchar(255),
   vl_doc decimal(18, 2),
   vl_desc decimal(18, 2),
   ind_frt varchar(1),
@@ -1780,7 +1780,7 @@ create table reg_d020 (
   vl_bc_icms decimal(18, 2),
   aliq_icms decimal(18, 2),
   vl_icms decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_d030 (
@@ -1788,12 +1788,12 @@ create table reg_d030 (
   id_pai int,
   cod_mun_orig varchar(7),
   cod_mun_dest varchar(7),
-  veic_id varchar(60),
+  veic_id varchar(255),
   uf_veic varchar(2),
-  marca varchar(60),
-  modelo varchar(60),
+  marca varchar(255),
+  modelo varchar(255),
   ano varchar(4),
-  cert varchar(60),
+  cert varchar(255),
   uf_cert varchar(2)
 );
 
@@ -1812,13 +1812,13 @@ create table reg_d050 (
   id_pai int,
   cod_mun_orig varchar(7),
   cod_mun_dest varchar(7),
-  cod_part_consg varchar(60),
-  cod_part_red varchar(60),
+  cod_part_consg varchar(255),
+  cod_part_red varchar(255),
   ind_frt_red varchar(1),
-  veic_id varchar(60),
+  veic_id varchar(255),
   uf_veic varchar(2),
-  marca varchar(60),
-  modelo varchar(60),
+  marca varchar(255),
+  modelo varchar(255),
   ano varchar(4),
   vl_frt_pv decimal(18, 2),
   vl_sec_cat decimal(18, 2),
@@ -1831,12 +1831,12 @@ create table reg_d050 (
 create table reg_d060 (
   id int not null,
   id_pai int,
-  cod_part_consg varchar(60),
+  cod_part_consg varchar(255),
   cod_mun_orig varchar(7),
   cod_mun_dest varchar(7),
   ind_veic varchar(1),
-  veic_id varchar(60),
-  veic_descr varchar(60),
+  veic_id varchar(255),
+  veic_descr varchar(255),
   ind_nav varchar(1),
   viagem int,
   vl_frt_liq decimal(18, 2),
@@ -1852,8 +1852,8 @@ create table reg_d070 (
   id_pai int,
   cod_mun_orig varchar(7),
   cod_mun_dest varchar(7),
-  veic_id varchar(60),
-  veic_descr varchar(60),
+  veic_id varchar(255),
+  veic_descr varchar(255),
   viagem int,
   ind_tfa varchar(1),
   vl_peso_tx decimal(18, 2),
@@ -1868,11 +1868,11 @@ create table reg_d080 (
   id_pai int,
   cod_mun_orig varchar(7),
   cod_mun_dest varchar(7),
-  cod_part_consg varchar(60),
-  cod_part_red varchar(60),
+  cod_part_consg varchar(255),
+  cod_part_red varchar(255),
   ind_nat_frt varchar(1),
-  otm varchar(60),
-  veic_id varchar(60),
+  otm varchar(255),
+  veic_id varchar(255),
   uf_veic varchar(2),
   vl_frt_pv decimal(18, 2),
   vl_gris decimal(18, 2),
@@ -1888,17 +1888,17 @@ create table reg_d090 (
   ind_emit varchar(1),
   cnpj_emit varchar(14),
   uf_emit varchar(2),
-  ie_emit varchar(60),
+  ie_emit varchar(255),
   uf_orig varchar(2),
   cod_mun_orig varchar(7),
   cnpj_tom varchar(14),
   cpf_tom varchar(11),
   uf_tom varchar(2),
-  ie_tom varchar(60),
+  ie_tom varchar(255),
   uf_dest varchar(2),
   cod_mun_dest varchar(7),
   cod_mod varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   num_doc int,
   dt_doc varchar(8),
@@ -1911,18 +1911,18 @@ create table reg_d180 (
   cnpj varchar(14),
   cpf varchar(11),
   uf varchar(2),
-  ie varchar(60),
+  ie varchar(255),
   cod_mod varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   num_doc int,
   dt_doc varchar(8),
   vl_doc decimal(18, 2),
   vl_merc decimal(18, 2),
-  nat_vol varchar(60),
+  nat_vol varchar(255),
   qtd_vol int,
-  vol varchar(60),
-  especie varchar(60),
-  marca varchar(60),
+  vol varchar(255),
+  especie varchar(255),
+  marca varchar(255),
   num int,
   peso_brt int,
   peso_liq int
@@ -1934,22 +1934,22 @@ create table reg_d185 (
   ind_carg varchar(1),
   cnpj_col varchar(14),
   uf_col varchar(2),
-  ie_col varchar(60),
+  ie_col varchar(255),
   cod_mun_col varchar(7),
-  im_col varchar(60),
+  im_col varchar(255),
   cnpj_entg varchar(14),
   uf_entg varchar(2),
-  ie_entg varchar(60),
+  ie_entg varchar(255),
   cod_mun_entg varchar(7),
-  im_entg varchar(60)
+  im_entg varchar(255)
 );
 
 create table reg_d190 (
   id int not null,
   id_pai int,
-  veic_id varchar(60),
+  veic_id varchar(255),
   uf_veic varchar(2),
-  num varchar(60),
+  num varchar(255),
   peso_brt int,
   peso_liq int
 );
@@ -1959,7 +1959,7 @@ create table reg_d200 (
   id_pai int,
   cod_mod varchar(2),
   cod_sit varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   num_doc int,
   dt_doc varchar(8),
@@ -1971,7 +1971,7 @@ create table reg_d200 (
   vl_bc_icms decimal(18, 2),
   aliq_icms decimal(18, 2),
   vl_icms decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_d210 (
@@ -1979,10 +1979,10 @@ create table reg_d210 (
   id_pai int,
   cod_mun_orig varchar(7),
   cod_mun_dest varchar(7),
-  cod_linha varchar(60),
-  linha varchar(60),
-  polt_cab varchar(60),
-  agente varchar(60),
+  cod_linha varchar(255),
+  linha varchar(255),
+  polt_cab varchar(255),
+  agente varchar(255),
   dt_p varchar(8),
   hora varchar(6),
   vl_tfa decimal(18, 2),
@@ -1993,8 +1993,8 @@ create table reg_d210 (
 create table reg_d240 (
   id int not null,
   id_pai int,
-  cod_part varchar(60),
-  cod_nat varchar(60),
+  cod_part varchar(255),
+  cod_nat varchar(255),
   vl_isnt_icms decimal(18, 2),
   vl_out_icms decimal(18, 2)
 );
@@ -2003,7 +2003,7 @@ create table reg_d250 (
   id int not null,
   id_pai int,
   cod_mod varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   num_doc_ini int,
   num_doc_fin int,
@@ -2028,7 +2028,7 @@ create table reg_d260 (
   cod_sit varchar(2),
   num_doc int,
   dt_doc varchar(8),
-  voo varchar(60),
+  voo varchar(255),
   uf varchar(2),
   cod_iata_ini varchar(3),
   cod_iata_fin varchar(3),
@@ -2041,7 +2041,7 @@ create table reg_d260 (
   vl_bc_icms decimal(18, 2),
   aliq_icms decimal(18, 2),
   vl_icms decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_d270 (
@@ -2049,7 +2049,7 @@ create table reg_d270 (
   id_pai int,
   cod_mod varchar(2),
   dt_doc varchar(8),
-  vôo varchar(60),
+  vôo varchar(255),
   cod_iata_ini varchar(3),
   cod_iata_fin varchar(3),
   qtd_pass_dest int,
@@ -2067,13 +2067,13 @@ create table reg_d280 (
   cod_sit varchar(2),
   num_doc int,
   dt_doc varchar(8),
-  vôo varchar(60),
-  cnx varchar(60),
+  vôo varchar(255),
+  cnx varchar(255),
   cod_iata_ini varchar(3),
   cod_iata_fin varchar(3),
   ind_classe varchar(1),
   cpf varchar(11),
-  poltrona varchar(60),
+  poltrona varchar(255),
   vl_tot decimal(18, 2),
   vl_tx decimal(18, 2),
   vl_desc decimal(18, 2),
@@ -2088,7 +2088,7 @@ create table reg_d290 (
   id int not null,
   id_pai int,
   cod_mod varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   num_doc_ini int,
   num_doc_fin int,
@@ -2106,16 +2106,16 @@ create table reg_d400 (
   id_pai int,
   ind_oper varchar(1),
   ind_emit varchar(1),
-  cod_part varchar(60),
+  cod_part varchar(255),
   cod_mod varchar(2),
   cod_sit varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   cod_cons varchar(2),
   num_doc int,
   dt_doc varchar(8),
   dt_a_p varchar(8),
-  cod_nat varchar(60),
+  cod_nat varchar(255),
   vl_doc decimal(18, 2),
   vl_desc decimal(18, 2),
   vl_serv decimal(18, 2),
@@ -2124,14 +2124,14 @@ create table reg_d400 (
   vl_da decimal(18, 2),
   vl_bc_icms decimal(18, 2),
   vl_icms decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_d405 (
   id int not null,
   id_pai int,
-  terminal varchar(60),
-  cod_area varchar(60),
+  terminal varchar(255),
+  cod_area varchar(255),
   ind_serv varchar(1),
   per_fiscal varchar(6),
   dt_ini_serv varchar(8),
@@ -2142,11 +2142,11 @@ create table reg_d450 (
   id int not null,
   id_pai int,
   num_item int,
-  cod_item varchar(60),
+  cod_item varchar(255),
   cod_class varchar(3),
   vl_unit decimal(18, 3),
   qtd decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item decimal(18, 2),
   vl_desc_i decimal(18, 2),
   cst varchar(3),
@@ -2158,7 +2158,7 @@ create table reg_d450 (
   cnpj varchar(14),
   cpf varchar(11),
   uf varchar(2),
-  ie varchar(60)
+  ie varchar(255)
 );
 
 create table reg_d460 (
@@ -2177,7 +2177,7 @@ create table reg_d470 (
   id_pai int,
   cod_mod varchar(2),
   cod_mun varchar(7),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   cod_cons varchar(2),
   qtd_cons int,
@@ -2197,10 +2197,10 @@ create table reg_d475 (
   id int not null,
   id_pai int,
   num_item int,
-  cod_item varchar(60),
+  cod_item varchar(255),
   cod_class varchar(3),
   qtd decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item int,
   vl_desc_i decimal(18, 2),
   cst varchar(3),
@@ -2247,13 +2247,13 @@ create table reg_e020 (
   id_pai int,
   ind_oper varchar(1),
   ind_emit varchar(1),
-  cod_part varchar(60),
+  cod_part varchar(255),
   cod_mod varchar(2),
   cod_sit varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   num_doc int,
   dt_doc varchar(8),
-  num_lcto varchar(60),
+  num_lcto varchar(255),
   dt_e_s varchar(8),
   vl_cont decimal(18, 2),
   vl_bc_icms decimal(18, 2),
@@ -2267,7 +2267,7 @@ create table reg_e020 (
   vl_ipi decimal(18, 2),
   vl_isnt_ipi decimal(18, 2),
   vl_out_ipi decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_e025 (
@@ -2292,19 +2292,19 @@ create table reg_e050 (
   id int not null,
   id_pai int,
   cod_mod varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   num_doc_ini int,
   num_doc_fin int,
   dt_doc varchar(8),
-  num_lcto varchar(60),
+  num_lcto varchar(255),
   qtd_canc int,
   vl_cont decimal(18, 2),
   vl_bc_icms decimal(18, 2),
   vl_icms decimal(18, 2),
   vl_isnt_icms decimal(18, 2),
   vl_out_icms decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_e055 (
@@ -2324,7 +2324,7 @@ create table reg_e060 (
   id_pai int,
   cod_mod varchar(2),
   ecf_cx int,
-  ecf_fab varchar(60),
+  ecf_fab varchar(255),
   cro int,
   crz int,
   dt_doc varchar(8),
@@ -2349,7 +2349,7 @@ create table reg_e060 (
   vl_isen decimal(18, 2),
   vl_nt decimal(18, 2),
   vl_st decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_e065 (
@@ -2375,7 +2375,7 @@ create table reg_e080 (
   id_pai int,
   ind_mr varchar(1),
   num_mr_ecf int,
-  num_lcto varchar(60),
+  num_lcto varchar(255),
   dt_mr_ecf varchar(8),
   vl_brt decimal(18, 2),
   vl_canc_issqn decimal(18, 2),
@@ -2422,15 +2422,15 @@ create table reg_e100 (
   id_pai int,
   ind_oper varchar(1),
   ind_emit varchar(1),
-  cod_part varchar(60),
+  cod_part varchar(255),
   cod_mod varchar(2),
   cod_sit varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   cod_cons varchar(2),
   num_doc int,
   dt_doc varchar(8),
-  num_lcto varchar(60),
+  num_lcto varchar(255),
   dt_e_s varchar(8),
   qtd_doc int,
   qtd_canc int,
@@ -2439,7 +2439,7 @@ create table reg_e100 (
   vl_icms decimal(18, 2),
   vl_isnt_icms decimal(18, 2),
   vl_out_icms decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_e105 (
@@ -2459,14 +2459,14 @@ create table reg_e120 (
   id_pai int,
   ind_oper varchar(1),
   ind_emit varchar(1),
-  cod_part varchar(60),
+  cod_part varchar(255),
   cod_mod varchar(2),
   cod_sit varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   num_doc int,
   dt_doc varchar(8),
-  num_lcto varchar(60),
+  num_lcto varchar(255),
   dt_a_p varchar(8),
   cfop varchar(4),
   vl_cont decimal(18, 2),
@@ -2475,19 +2475,19 @@ create table reg_e120 (
   vl_icms decimal(18, 2),
   vl_isnt_icms decimal(18, 2),
   vl_out_icms decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_e140 (
   id int not null,
   id_pai int,
   cod_mod varchar(2),
-  ser varchar(60),
+  ser varchar(255),
   sub int,
   num_doc_ini int,
   num_doc_fin int,
   dt_doc varchar(8),
-  num_lcto varchar(60),
+  num_lcto varchar(255),
   qtd_canc int,
   cfop varchar(4),
   vl_cont decimal(18, 2),
@@ -2495,7 +2495,7 @@ create table reg_e140 (
   vl_icms decimal(18, 2),
   vl_isnt_icms decimal(18, 2),
   vl_out_icms decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_e300 (
@@ -2550,11 +2550,11 @@ create table reg_e340 (
   id_pai int,
   cod_aj varchar(3),
   vl_aj decimal(18, 2),
-  num_da varchar(60),
-  num_proc varchar(60),
+  num_da varchar(255),
+  num_proc varchar(255),
   ind_proc varchar(1),
-  [proc] varchar(60),
-  cod_inf_obs varchar(60)
+  proc varchar(255),
+  cod_inf_obs varchar(255)
 );
 
 create table reg_e350 (
@@ -2563,12 +2563,12 @@ create table reg_e350 (
   cod_or varchar(3),
   vl_or decimal(18, 2),
   dt_vcto varchar(8),
-  cod_rec varchar(60),
+  cod_rec varchar(255),
   uf_or varchar(2),
-  num_proc varchar(60),
+  num_proc varchar(255),
   ind_proc varchar(1),
-  [proc] varchar(60),
-  cod_inf_obs varchar(60)
+  proc varchar(255),
+  cod_inf_obs varchar(255)
 );
 
 create table reg_e360 (
@@ -2627,7 +2627,7 @@ create table reg_e520 (
   ind_aj varchar(1),
   dt_aj varchar(8),
   vl_aj decimal(18, 2),
-  descr_aj varchar(60)
+  descr_aj varchar(255)
 );
 
 create table reg_e530 (
@@ -2665,15 +2665,15 @@ create table reg_h025 (
   id int not null,
   id_pai int,
   ind_prop varchar(1),
-  cod_part varchar(60),
+  cod_part varchar(255),
   ind_inv varchar(1),
   cod_ncm varchar(8),
-  cod_item varchar(60),
+  cod_item varchar(255),
   vl_unit decimal(18, 3),
   qtd decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item decimal(18, 2),
-  cod_inf_obs varchar(60)
+  cod_inf_obs varchar(255)
 );
 
 create table reg_h200 (
@@ -2681,27 +2681,27 @@ create table reg_h200 (
   id_pai int,
   dt_mov varchar(8),
   dt_disp varchar(8),
-  cod_item varchar(60),
+  cod_item varchar(255),
   vl_unit decimal(18, 3),
   qtd decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_item decimal(18, 2),
   ind_ope varchar(1),
   ind_doc_ope varchar(1),
-  tp_doc_int varchar(60),
-  id_doc_int varchar(60)
+  tp_doc_int varchar(255),
+  id_doc_int varchar(255)
 );
 
 create table reg_h220 (
   id int not null,
   id_pai int,
   dt_red varchar(8),
-  cod_item_ori varchar(60),
-  cod_item_dest varchar(60),
+  cod_item_ori varchar(255),
+  cod_item_dest varchar(255),
   qtd decimal(18, 3),
-  unid varchar(60),
-  tp_doc_int varchar(60),
-  id_doc_int varchar(60)
+  unid varchar(255),
+  tp_doc_int varchar(255),
+  id_doc_int varchar(255)
 );
 
 create table reg_h230 (
@@ -2709,10 +2709,10 @@ create table reg_h230 (
   id_pai int,
   dt_ini_op varchar(8),
   dt_fin_op varchar(8),
-  cod_doc_op varchar(60),
-  cod_item varchar(60),
+  cod_doc_op varchar(255),
+  cod_item varchar(255),
   qtd_prod decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   cust_inc decimal(18, 2),
   qtd_enc decimal(18, 2),
   sd_cust_inc decimal(18, 2)
@@ -2722,9 +2722,9 @@ create table reg_h235 (
   id int not null,
   id_pai int,
   dt_incl varchar(8),
-  cod_item varchar(60),
+  cod_item varchar(255),
   qtd decimal(18, 3),
-  unid varchar(60),
+  unid varchar(255),
   vl_unit int
 );
 
@@ -2733,9 +2733,9 @@ create table reg_h240 (
   id_pai int,
   dt_ini varchar(8),
   dt_fin varchar(8),
-  cod_item varchar(60),
+  cod_item varchar(255),
   qtd_enc decimal(18, 2),
-  unid varchar(60),
+  unid varchar(255),
   sd_cust_inc decimal(18, 2)
 );
 
@@ -2743,18 +2743,18 @@ create table reg_h250 (
   id int not null,
   id_pai int,
   dt_ret varchar(8),
-  cod_item varchar(60),
+  cod_item varchar(255),
   qtd_quant decimal(18, 2),
-  unid varchar(60)
+  unid varchar(255)
 );
 
 create table reg_h255 (
   id int not null,
   id_pai int,
   dt_rem varchar(8),
-  cod_item varchar(60),
+  cod_item varchar(255),
   qtd_quant decimal(18, 2),
-  unid varchar(60)
+  unid varchar(255)
 );
 
 create table reg_h990 (
@@ -2774,24 +2774,24 @@ create table reg_i005 (
   id_pai int,
   reg_cod varchar(4),
   num_ad int,
-  campo varchar(60),
-  descrição varchar(60),
-  tipo varchar(60)
+  campo varchar(255),
+  descrição varchar(255),
+  tipo varchar(255)
 );
 
 create table reg_i010 (
   id int not null,
   id_pai int,
   ind_esc varchar(1),
-  cod_cta varchar(60),
-  cod_lecd varchar(60)
+  cod_cta varchar(255),
+  cod_lecd varchar(255)
 );
 
 create table reg_i020 (
   id int not null,
   id_pai int,
   dnrc_abert varchar(255),
-  num_diário varchar(60)
+  num_diário varchar(255)
 );
 
 create table reg_i050 (
@@ -2800,25 +2800,25 @@ create table reg_i050 (
   dt_alt varchar(8),
   ind_nat varchar(1),
   ind_cta varchar(1),
-  nível varchar(60),
-  cod_cta varchar(60),
-  cod_cta_sup varchar(60),
-  cta varchar(60),
-  cod_cta_pad varchar(60)
+  nível varchar(255),
+  cod_cta varchar(255),
+  cod_cta_sup varchar(255),
+  cta varchar(255),
+  cod_cta_pad varchar(255)
 );
 
 create table reg_i100 (
   id int not null,
   id_pai int,
   dt_alt varchar(8),
-  cod_ccus varchar(60),
-  ccus varchar(60)
+  cod_ccus varchar(255),
+  ccus varchar(255)
 );
 
 create table reg_i150 (
   id int not null,
   id_pai int,
-  cod_cta varchar(60),
+  cod_cta varchar(255),
   dt_ini varchar(8),
   dt_fin varchar(8),
   vl_sld_ini decimal(18, 2),
@@ -2832,7 +2832,7 @@ create table reg_i150 (
 create table reg_i200 (
   id int not null,
   id_pai int,
-  num_lcto varchar(60),
+  num_lcto varchar(255),
   dt_lcto varchar(8),
   vl_lcto decimal(18, 2),
   ind_lcto varchar(1)
@@ -2841,11 +2841,11 @@ create table reg_i200 (
 create table reg_i250 (
   id int not null,
   id_pai int,
-  cod_cta varchar(60),
-  cod_ccus varchar(60),
+  cod_cta varchar(255),
+  cod_ccus varchar(255),
   vl_dc decimal(18, 2),
   ind_dc varchar(1),
-  num_arq varchar(60),
+  num_arq varchar(255),
   hist varchar(255)
 );
 
@@ -2853,7 +2853,7 @@ create table reg_i300 (
   id int not null,
   id_pai int,
   dt_bcte varchar(8),
-  cod_ccus varchar(60),
+  cod_ccus varchar(255),
   val_debd int,
   val_cred int
 );
@@ -2862,7 +2862,7 @@ create table reg_i350 (
   id int not null,
   id_pai int,
   dt_res varchar(8),
-  cod_cta varchar(60),
+  cod_cta varchar(255),
   vl_cta decimal(18, 2),
   ind_dc varchar(1)
 );
@@ -2946,16 +2946,16 @@ create table reg_j800 (
   id int not null,
   id_pai int,
   ind_grp varchar(2),
-  num_seq varchar(60),
-  tit varchar(60),
+  num_seq varchar(255),
+  tit varchar(255),
   nota varchar(255)
 );
 
 create table reg_j825 (
   id int not null,
   id_pai int,
-  num_seq varchar(60),
-  obj varchar(60)
+  num_seq varchar(255),
+  obj varchar(255)
 );
 
 create table reg_j900 (
@@ -2980,17 +2980,17 @@ create table reg_k050 (
   id int not null,
   id_pai int,
   dt_alt varchar(8),
-  cod_reg_trab varchar(60),
+  cod_reg_trab varchar(255),
   cpf varchar(11),
   nit varchar(11),
   cod_categ varchar(2),
-  nome_trab varchar(60),
+  nome_trab varchar(255),
   dt_nasc varchar(8),
   dt_admissao varchar(8),
   dt_demissao varchar(8),
   ind_vinc varchar(1),
   tipo_ato_nom varchar(1),
-  nm_ato_nom varchar(60),
+  nm_ato_nom varchar(255),
   dt_ato_nom varchar(8)
 );
 
@@ -2998,26 +2998,26 @@ create table reg_k100 (
   id int not null,
   id_pai int,
   dt_alt varchar(8),
-  cod_ltc varchar(60),
-  desc_ltc varchar(60)
+  cod_ltc varchar(255),
+  desc_ltc varchar(255)
 );
 
 create table reg_k150 (
   id int not null,
   id_pai int,
   dt_alt varchar(8),
-  cod_rubrica varchar(60),
-  desc_rubrica varchar(60)
+  cod_rubrica varchar(255),
+  desc_rubrica varchar(255)
 );
 
 create table reg_k200 (
   id int not null,
   id_pai int,
   dt_alt varchar(8),
-  cod_rubrica varchar(60),
-  cod_ltc varchar(60),
-  cod_ccus varchar(60),
-  cod_cta varchar(60)
+  cod_rubrica varchar(255),
+  cod_ltc varchar(255),
+  cod_ccus varchar(255),
+  cod_cta varchar(255)
 );
 
 create table reg_k225 (
@@ -3032,13 +3032,13 @@ create table reg_k250 (
   id int not null,
   id_pai int,
   ind_fl varchar(1),
-  cod_ltc varchar(60),
-  cod_reg_trab varchar(60),
+  cod_ltc varchar(255),
+  cod_reg_trab varchar(255),
   dt_comp varchar(6),
   dt_pgto varchar(8),
   cod_cbo int,
   cod_ocorr varchar(2),
-  desc_cargo varchar(60),
+  desc_cargo varchar(255),
   qtd_dep_ir int,
   qtd_dep_sf int,
   vl_base_irrf decimal(18, 2),
@@ -3049,9 +3049,9 @@ create table reg_k300 (
   id int not null,
   id_pai int,
   ind_fl varchar(1),
-  cod_reg_trab varchar(60),
+  cod_reg_trab varchar(255),
   dt_comp varchar(6),
-  cod_rubr varchar(60),
+  cod_rubr varchar(255),
   vl_rubr decimal(18, 2),
   ind_rubr varchar(1),
   ind_base_irrf varchar(1),
@@ -3083,19 +3083,19 @@ create table reg_l050 (
   cod_cta_desp int,
   cod_rec_vinc int,
   cod_cont_rec int,
-  nm_emp varchar(60),
+  nm_emp varchar(255),
   dt_emp varchar(8),
   vl_emp decimal(18, 2),
   ind_deb_cred varchar(1),
-  cod_credor varchar(60),
+  cod_credor varchar(255),
   hist_emp varchar(255)
 );
 
 create table reg_l100 (
   id int not null,
   id_pai int,
-  nm_emp varchar(60),
-  nm_liquid varchar(60),
+  nm_emp varchar(255),
+  nm_liquid varchar(255),
   dt_liquid varchar(8),
   vl_liquid decimal(18, 2),
   ind_deb_cred varchar(1),
@@ -3105,8 +3105,8 @@ create table reg_l100 (
 create table reg_l150 (
   id int not null,
   id_pai int,
-  nm_emp varchar(60),
-  nm_pgto varchar(60),
+  nm_emp varchar(255),
+  nm_pgto varchar(255),
   dt_pgto varchar(8),
   vl_pgto decimal(18, 2),
   ind_deb_cred varchar(1),
@@ -3126,7 +3126,7 @@ create table reg_l200 (
   vl_rec_orcada decimal(18, 2),
   vl_rec_realizada decimal(18, 2),
   cod_rec_vinc int,
-  desc_receita varchar(60),
+  desc_receita varchar(255),
   ind_tipo_conta varchar(1),
   nm_nivel_conta int
 );
@@ -3162,7 +3162,7 @@ create table reg_l250 (
 create table reg_l300 (
   id int not null,
   id_pai int,
-  nm_lei_decreto varchar(60),
+  nm_lei_decreto varchar(255),
   dt_lei_decreto varchar(8),
   vl_cred_adicional decimal(18, 2),
   vl_red_dotacoes decimal(18, 2),
@@ -3175,7 +3175,7 @@ create table reg_l350 (
   id_pai int,
   exercicio varchar(4),
   cod_org int,
-  nome_org varchar(60)
+  nome_org varchar(255)
 );
 
 create table reg_l400 (
@@ -3184,7 +3184,7 @@ create table reg_l400 (
   exercicio varchar(4),
   cod_org int,
   cod_un_orc int,
-  nom_um_orc varchar(60),
+  nom_um_orc varchar(255),
   tip_un_orc varchar(2),
   cnpj varchar(14)
 );
@@ -3194,7 +3194,7 @@ create table reg_l450 (
   id_pai int,
   exercicio varchar(4),
   cod_fun int,
-  nom_fun varchar(60)
+  nom_fun varchar(255)
 );
 
 create table reg_l500 (
@@ -3202,7 +3202,7 @@ create table reg_l500 (
   id_pai int,
   exercicio varchar(4),
   cod_subfun int,
-  nom_subfun varchar(60)
+  nom_subfun varchar(255)
 );
 
 create table reg_l550 (
@@ -3210,7 +3210,7 @@ create table reg_l550 (
   id_pai int,
   exercicio varchar(4),
   cod_progr int,
-  nom_progr varchar(60)
+  nom_progr varchar(255)
 );
 
 create table reg_l600 (
@@ -3218,7 +3218,7 @@ create table reg_l600 (
   id_pai int,
   exercicio varchar(4),
   cod_subprogr int,
-  nom_subprogr varchar(60)
+  nom_subprogr varchar(255)
 );
 
 create table reg_l650 (
@@ -3226,7 +3226,7 @@ create table reg_l650 (
   id_pai int,
   exercicio varchar(4),
   cod_proj_ativ_oe int,
-  nom_proj_ativ_oe varchar(60),
+  nom_proj_ativ_oe varchar(255),
   tip_proj_ativ_oe varchar(2)
 );
 
@@ -3235,7 +3235,7 @@ create table reg_l700 (
   id_pai int,
   exercicio varchar(4),
   cod_cta_desp int,
-  nom_despesa varchar(60),
+  nom_despesa varchar(255),
   ind_tipo_conta varchar(1),
   nm_nivel_conta int
 );
@@ -3244,14 +3244,14 @@ create table reg_l750 (
   id int not null,
   id_pai int,
   exercicio varchar(4),
-  cod_fornecedor varchar(60),
-  nom_fornecedor varchar(60),
+  cod_fornecedor varchar(255),
+  nom_fornecedor varchar(255),
   tip_fornecedor varchar(1),
   cnpj_fornecedor varchar(14),
   cpf_fornecedor varchar(11),
   nit_fornecedor varchar(11),
-  end_fornecedor varchar(60),
-  cid_fornecedor varchar(60),
+  end_fornecedor varchar(255),
+  cid_fornecedor varchar(255),
   uf_fornecedor varchar(2),
   cep_fornecedor varchar(8),
   desc_tip_forn varchar(255)
@@ -3262,8 +3262,8 @@ create table reg_l800 (
   id_pai int,
   exercicio varchar(4),
   cod_cta_desp int,
-  cod_fornecedor varchar(60),
-  nm_emp varchar(60),
+  cod_fornecedor varchar(255),
+  nm_emp varchar(255),
   tip_obra_servico varchar(2),
   cei varchar(12),
   desc_serv_obra varchar(255)
@@ -3285,14 +3285,14 @@ create table reg_z030 (
   id int not null,
   id_pai int,
   tipo_oper varchar(1),
-  cod_part varchar(60),
+  cod_part varchar(255),
   ind_tit varchar(2),
-  descr_tit varchar(60),
-  num_tit varchar(60),
+  descr_tit varchar(255),
+  num_tit varchar(255),
   dt_tit varchar(8),
   vl_tit decimal(18, 2),
   qtd_parc int,
-  num_lcto varchar(60)
+  num_lcto varchar(255)
 );
 
 create table reg_z035 (
@@ -3306,24 +3306,24 @@ create table reg_z035 (
   dt_vcto varchar(8),
   dt_pgto varchar(8),
   ind_pgto varchar(1),
-  descr_pgto varchar(60),
-  num_lcto varchar(60)
+  descr_pgto varchar(255),
+  num_lcto varchar(255)
 );
 
 create table reg_z050 (
   id int not null,
   id_pai int,
-  num_cad varchar(60),
+  num_cad varchar(255),
   ind_bem varchar(1),
-  num_prnc varchar(60),
+  num_prnc varchar(255),
   dt_doc varchar(8),
-  id_doc varchar(60),
+  id_doc varchar(255),
   vl_doc decimal(18, 2),
   vl_rs decimal(18, 2),
-  descr_item varchar(60),
-  num_arq varchar(60),
-  cod_grp_cta varchar(60),
-  cod_grp_cta_depr varchar(60),
+  descr_item varchar(255),
+  num_arq varchar(255),
+  cod_grp_cta varchar(255),
+  cod_grp_cta_depr varchar(255),
   dt_depr_ini varchar(8),
   tx_depr decimal(18, 2),
   depr_acum decimal(18, 2),
