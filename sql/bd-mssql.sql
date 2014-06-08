@@ -212,7 +212,7 @@ create table reg_0450 (
   id int not null,
   id_pai int,
   "cod_inf_obs" varchar(255),
-  "txt" varchar(255)
+  "txt" varchar(65536)
 );
 
 create table reg_0455 (
@@ -1171,7 +1171,7 @@ create table reg_b700 (
   "dt_obr_ini" varchar(8),
   "dt_enc_ob" varchar(8),
   "vl_or_mun" decimal(18, 2),
-  "coment" varchar(255)
+  "coment" varchar(65536)
 );
 
 create table reg_b990 (
@@ -1362,7 +1362,7 @@ create table reg_c300 (
 create table reg_c305 (
   id int not null,
   id_pai int,
-  "descr_compl" varchar(255)
+  "descr_compl" varchar(65536)
 );
 
 create table reg_c310 (
@@ -2790,7 +2790,7 @@ create table reg_i010 (
 create table reg_i020 (
   id int not null,
   id_pai int,
-  "dnrc_abert" varchar(255),
+  "dnrc_abert" varchar(65536),
   "num_diário" varchar(255)
 );
 
@@ -2846,7 +2846,7 @@ create table reg_i250 (
   "vl_dc" decimal(18, 2),
   "ind_dc" varchar(1),
   "num_arq" varchar(255),
-  "hist" varchar(255)
+  "hist" varchar(65536)
 );
 
 create table reg_i300 (
@@ -2948,7 +2948,7 @@ create table reg_j800 (
   "ind_grp" varchar(2),
   "num_seq" varchar(255),
   "tit" varchar(255),
-  "nota" varchar(255)
+  "nota" varchar(65536)
 );
 
 create table reg_j825 (
@@ -2961,7 +2961,7 @@ create table reg_j825 (
 create table reg_j900 (
   id int not null,
   id_pai int,
-  "dnrc_encer" varchar(255)
+  "dnrc_encer" varchar(65536)
 );
 
 create table reg_j990 (
@@ -3088,7 +3088,7 @@ create table reg_l050 (
   "vl_emp" decimal(18, 2),
   "ind_deb_cred" varchar(1),
   "cod_credor" varchar(255),
-  "hist_emp" varchar(255)
+  "hist_emp" varchar(65536)
 );
 
 create table reg_l100 (
@@ -3099,7 +3099,7 @@ create table reg_l100 (
   "dt_liquid" varchar(8),
   "vl_liquid" decimal(18, 2),
   "ind_deb_cred" varchar(1),
-  "hist_liquid" varchar(255)
+  "hist_liquid" varchar(65536)
 );
 
 create table reg_l150 (
@@ -3110,7 +3110,7 @@ create table reg_l150 (
   "dt_pgto" varchar(8),
   "vl_pgto" decimal(18, 2),
   "ind_deb_cred" varchar(1),
-  "hist_pgto" varchar(255),
+  "hist_pgto" varchar(65536),
   "cta_debito" int,
   "cod_org_un_deb" int,
   "cta_credito" int,
@@ -3254,7 +3254,7 @@ create table reg_l750 (
   "cid_fornecedor" varchar(255),
   "uf_fornecedor" varchar(2),
   "cep_fornecedor" varchar(8),
-  "desc_tip_forn" varchar(255)
+  "desc_tip_forn" varchar(65536)
 );
 
 create table reg_l800 (
@@ -3266,7 +3266,7 @@ create table reg_l800 (
   "nm_emp" varchar(255),
   "tip_obra_servico" varchar(2),
   "cei" varchar(12),
-  "desc_serv_obra" varchar(255)
+  "desc_serv_obra" varchar(65536)
 );
 
 create table reg_l990 (

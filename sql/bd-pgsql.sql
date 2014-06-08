@@ -212,7 +212,7 @@ create table reg_0450 (
   id int not null,
   id_pai int,
   "cod_inf_obs" character varying(255),
-  "txt" character varying(255)
+  "txt" character varying(65536)
 );
 
 create table reg_0455 (
@@ -1171,7 +1171,7 @@ create table reg_b700 (
   "dt_obr_ini" character varying(8),
   "dt_enc_ob" character varying(8),
   "vl_or_mun" numeric(18, 2),
-  "coment" character varying(255)
+  "coment" character varying(65536)
 );
 
 create table reg_b990 (
@@ -1362,7 +1362,7 @@ create table reg_c300 (
 create table reg_c305 (
   id int not null,
   id_pai int,
-  "descr_compl" character varying(255)
+  "descr_compl" character varying(65536)
 );
 
 create table reg_c310 (
@@ -2790,7 +2790,7 @@ create table reg_i010 (
 create table reg_i020 (
   id int not null,
   id_pai int,
-  "dnrc_abert" character varying(255),
+  "dnrc_abert" character varying(65536),
   "num_diário" character varying(255)
 );
 
@@ -2846,7 +2846,7 @@ create table reg_i250 (
   "vl_dc" numeric(18, 2),
   "ind_dc" character varying(1),
   "num_arq" character varying(255),
-  "hist" character varying(255)
+  "hist" character varying(65536)
 );
 
 create table reg_i300 (
@@ -2948,7 +2948,7 @@ create table reg_j800 (
   "ind_grp" character varying(2),
   "num_seq" character varying(255),
   "tit" character varying(255),
-  "nota" character varying(255)
+  "nota" character varying(65536)
 );
 
 create table reg_j825 (
@@ -2961,7 +2961,7 @@ create table reg_j825 (
 create table reg_j900 (
   id int not null,
   id_pai int,
-  "dnrc_encer" character varying(255)
+  "dnrc_encer" character varying(65536)
 );
 
 create table reg_j990 (
@@ -3088,7 +3088,7 @@ create table reg_l050 (
   "vl_emp" numeric(18, 2),
   "ind_deb_cred" character varying(1),
   "cod_credor" character varying(255),
-  "hist_emp" character varying(255)
+  "hist_emp" character varying(65536)
 );
 
 create table reg_l100 (
@@ -3099,7 +3099,7 @@ create table reg_l100 (
   "dt_liquid" character varying(8),
   "vl_liquid" numeric(18, 2),
   "ind_deb_cred" character varying(1),
-  "hist_liquid" character varying(255)
+  "hist_liquid" character varying(65536)
 );
 
 create table reg_l150 (
@@ -3110,7 +3110,7 @@ create table reg_l150 (
   "dt_pgto" character varying(8),
   "vl_pgto" numeric(18, 2),
   "ind_deb_cred" character varying(1),
-  "hist_pgto" character varying(255),
+  "hist_pgto" character varying(65536),
   "cta_debito" integer,
   "cod_org_un_deb" integer,
   "cta_credito" integer,
@@ -3254,7 +3254,7 @@ create table reg_l750 (
   "cid_fornecedor" character varying(255),
   "uf_fornecedor" character varying(2),
   "cep_fornecedor" character varying(8),
-  "desc_tip_forn" character varying(255)
+  "desc_tip_forn" character varying(65536)
 );
 
 create table reg_l800 (
@@ -3266,7 +3266,7 @@ create table reg_l800 (
   "nm_emp" character varying(255),
   "tip_obra_servico" character varying(2),
   "cei" character varying(12),
-  "desc_serv_obra" character varying(255)
+  "desc_serv_obra" character varying(65536)
 );
 
 create table reg_l990 (

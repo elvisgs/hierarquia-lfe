@@ -772,7 +772,7 @@
         {
           "campo": "TXT",
           "tipo": "C",
-          "tamanho": 255,
+          "tamanho": 65536,
           "decimais": 0
         }
       ]
@@ -5017,7 +5017,7 @@
         {
           "campo": "COMENT",
           "tipo": "C",
-          "tamanho": 255,
+          "tamanho": 65536,
           "decimais": 0
         }
       ]
@@ -5835,7 +5835,7 @@
         {
           "campo": "DESCR_COMPL",
           "tipo": "C",
-          "tamanho": 255,
+          "tamanho": 65536,
           "decimais": 0
         }
       ]
@@ -12343,11 +12343,11 @@
         {
           "campo": "DNRC_ABERT",
           "tipo": "C",
-          "tamanho": 255,
+          "tamanho": 65536,
           "decimais": 0
         },
         {
-          "campo": "NUM_DIÁRIO",
+          "campo": "NUM_DIARIO",
           "tipo": "C",
           "tamanho": 0,
           "decimais": 0
@@ -12569,7 +12569,7 @@
         {
           "campo": "HIST",
           "tipo": "C",
-          "tamanho": 255,
+          "tamanho": 65536,
           "decimais": 0
         }
       ]
@@ -12897,7 +12897,7 @@
         {
           "campo": "NOTA",
           "tipo": "C",
-          "tamanho": 255,
+          "tamanho": 65536,
           "decimais": 0
         }
       ]
@@ -12931,7 +12931,7 @@
         {
           "campo": "DNRC_ENCER",
           "tipo": "C",
-          "tamanho": 255,
+          "tamanho": 65536,
           "decimais": 0
         }
       ]
@@ -13433,7 +13433,7 @@
         {
           "campo": "HIST_EMP",
           "tipo": "C",
-          "tamanho": 255,
+          "tamanho": 65536,
           "decimais": 0
         }
       ]
@@ -13477,7 +13477,7 @@
         {
           "campo": "HIST_LIQUID",
           "tipo": "C",
-          "tamanho": 255,
+          "tamanho": 65536,
           "decimais": 0
         }
       ]
@@ -13521,7 +13521,7 @@
         {
           "campo": "HIST_PGTO",
           "tipo": "C",
-          "tamanho": 255,
+          "tamanho": 65536,
           "decimais": 0
         },
         {
@@ -14121,7 +14121,7 @@
         {
           "campo": "DESC_TIP_FORN",
           "tipo": "C",
-          "tamanho": 255,
+          "tamanho": 65536,
           "decimais": 0
         }
       ]
@@ -14171,7 +14171,7 @@
         {
           "campo": "DESC_SERV_OBRA",
           "tipo": "C",
-          "tamanho": 255,
+          "tamanho": 65536,
           "decimais": 0
         }
       ]
